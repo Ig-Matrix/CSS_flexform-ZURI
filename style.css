@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  hsl(0, 100%, 74%); 
+    color: white;
+    
+}
+.container{
+    background-image: url(./images/bg-intro-desktop.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding:0 10%;
+    margin: auto;
+    gap: 40px;
+    
+}
+.div-a h1{
+    font-weight: 700;
+    flex: 30%;
+}
+.div-a >  p {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.div-b{ 
+    flex: 70%;
+}
+.head-button{ 
+    margin-bottom: 10px;
+    text-align: center; 
+    border-radius: 6px; 
+    background-color:  hsl(248, 32%, 49%);
+    color: white;
+    padding: 10px;
+    font-size:13px ;
+    font-weight: 100px;
+}
+
+input:active{
+    background-image: url(./images/icon-error.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-color: red;
+    
+}
+.form-container{
+    background-color: white;
+    border: 30px solid white;
+    border-radius: 8px;
+
+}
+input{
+    padding: 10px;
+}
+.form-box{ 
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box input{
+    flex-basis: 100%;
+}
+.top{
+    color: hsl(246, 25%, 77%);
+    
+}
+
+.green{
+    font-size: 12px;
+    border-radius: 3px;
+background-color: hsl(154, 59%, 51%);
+text-align: center;
+padding: 10px;
+}
+.bottom-span{
+    font-weight: 400;
+    font-size: 11px;
+    margin: 0;
+    color: red;
+}
+.terms{
+    font-weight: 700;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    color:rgb(207, 194, 194) ;
+
+}
+@media screen and (max-width:500px) {
+    .container{
+        background-image: url(./images/bg-intro-mobile.png);
+        display: flex;
+        flex-direction: column;
+    }
+    .div-b{ 
+        margin-bottom: 40px;
+    }
+    
+}
